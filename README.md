@@ -23,7 +23,7 @@ In an Atom/RSS fields, here are all the mandatory fields:
 
 ## Installation
 
-1. Add `res_generator: ^1.0.0` to your `pubspec.yaml` file.
+1. Add `rss_generator: ^1.0.0` to your `pubspec.yaml` file.
 2. Import `import 'package:rss_generator/rss_generator.dart';`
 3. Create a `RssBuilder` by proving the multiple mandatory fields:
 
