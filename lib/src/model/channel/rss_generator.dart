@@ -4,8 +4,8 @@ import 'package:rss_generator/src/model/rss_object.dart';
 /// [https://www.w3schools.com/xml/rss_tag_generator.asp]
 class RssChannelGenerator extends RssSingleAttribute {
   RssChannelGenerator({
-    required String value,
-  }) : super(key: 'generator', value: value);
+    required super.value,
+  }) : super(key: 'generator');
 
   RssChannelGenerator.internal() : this(value: 'Dart RSS Generator');
 }

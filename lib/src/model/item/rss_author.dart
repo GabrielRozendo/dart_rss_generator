@@ -4,7 +4,7 @@ import 'package:rss_generator/src/model/rss_object.dart';
 /// [https://www.w3schools.com/xml/rss_tag_author.asp]
 class RssItemAuthor extends RssEmailAttribute {
   RssItemAuthor({
-    required String email,
-    required String? name,
-  }) : super(key: 'source', email: email, name: name);
+    required super.email,
+    required super.name,
+  }) : super(key: 'source');
 }

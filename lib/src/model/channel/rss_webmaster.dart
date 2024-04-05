@@ -4,7 +4,7 @@ import 'package:rss_generator/src/model/rss_object.dart';
 /// [https://www.w3schools.com/xml/rss_tag_webmaster.asp]
 class RssChannelWebmaster extends RssEmailAttribute {
   RssChannelWebmaster({
-    required String email,
-    required String? name,
-  }) : super(key: 'webMaster', email: email, name: name);
+    required super.email,
+    required super.name,
+  }) : super(key: 'webMaster');
 }

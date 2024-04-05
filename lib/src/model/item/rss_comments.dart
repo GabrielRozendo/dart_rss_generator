@@ -4,6 +4,6 @@ import 'package:rss_generator/src/model/rss_object.dart';
 /// [https://www.w3schools.com/xml/rss_tag_comments.asp]
 class RssItemComments extends RssSingleAttribute {
   RssItemComments({
-    required String value,
-  }) : super(key: 'comments', value: value);
+    required super.value,
+  }) : super(key: 'comments');
 }

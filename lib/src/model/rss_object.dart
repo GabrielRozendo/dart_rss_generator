@@ -31,14 +31,13 @@ abstract class RssSingleAttribute implements RssObject {
 /// A field with a <key, value> pair, where the value is an email
 abstract class RssEmailAttribute extends RssSingleAttribute {
   RssEmailAttribute({
-    required String key,
+    required super.key,
     required String email,
     required String? name,
   })  : assert(RegExp(
                 r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$')
             .hasMatch(email)),
         super(
-          key: key,
           value: name?.isNotEmpty == true ? '$email ($name)' : email,
         );
 }
